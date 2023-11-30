@@ -1,0 +1,20 @@
+.player{
+    display: flex;
+    align-items: center;
+    background-color: #ffd588;
+    width: 300px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    
+    span {
+        font-size: 24px;
+        margin-left: 14px;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 100%;
+    }
+}
