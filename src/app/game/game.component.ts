@@ -19,13 +19,11 @@ export class GameComponent {
 
   newGame() {
     this.game = new Game();
-    console.log(this.game);
   }
 
   takeCard() {
     if (!this.picCardAnimation) {
       this.currentCard = this.game.stack.pop();
-      console.log(this.currentCard);
 
       this.picCardAnimation = true;
 
@@ -34,7 +32,6 @@ export class GameComponent {
         this.game.currentPlayer % this.game.players.length;
       setTimeout(() => {
         this.game.playedCards.push(this.currentCard);
-        console.log(this.game.playedCards);
         this.picCardAnimation = false;
       }, 1000);
     }
